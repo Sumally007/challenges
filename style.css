@@ -1,72 +1,106 @@
-/* body{
-    width: 100vw;
-    height: 100vh
-}
-
-.container{
-    width: 80%;
-    
-}
-
-input{
-    width: 30%;
-    padding: 10px;
-    font-size: 18px;
-    border: 2px solid #00000022;
-    margin-top: 30px;
-    margin-left: 30px;
-    outline: none;
-    border-radius: 8px;
-    transition: all .2s;
-
-}
-
-input:focus{
-    width: 100%;
-    border: 2px solid blue;
-}
-
-input:focus::-webkit-input-placeholder{
-    opacity: 0;
-}
- */
-
-.hide{
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
+body{
+    margin: 0;
     padding: 0;
-    position: absolute;
-    width: 1px;
 }
 
 .container{
-    padding: 2em;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+
+}
+
+.contents{
+    height: 80%;
     width: 80%;
     margin: auto;
-    min-width: 120px;
+    padding: 50px;
+    display: grid;
+    grid-template-rows: 2fr max-content max-content;
+    border: 2px solid black;
+    border-radius: 14px;
+    background-color: rgba(47, 46, 46, 0.89);
+} 
+
+.contents:hover .row--3{
+    opacity: 1;
 }
 
-.search-bar{
-    width: 30%;
-    line-height: 2;
-    border-radius: 4px;
-    border: 1px solid #bbb;
-    transition: all .3s;
+.row--1{
+    background-color: red;
+    border-radius: 10px 10px 10px 10px;
+    background-image: url(./img/nat-5.jpg);
+    background-size: cover;
 }
 
-.search-bar:focus{
-    outline: none;
-    width: 100%;
-    border: 1px solid #3a71ca;
+.row--2{
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: max-content 2fr;
+    align-items: center;
+    padding: 30px;
+    padding-left: 0;
 }
 
-.search-bar::placeholder{
-    font-weight: 200;
+.profile-img{
+    border-radius: 14px;
 }
 
-.search-bar:focus::placeholder{
-    color: transparent;
+.profile-img img{
+    height: 50px;
+    width: 60px;
+    border-radius: 10px;
+}
+
+.profile__info{
+    align-self: start;
+    justify-self: start;
+    margin-left: 25px;
+    font-family: sans-serif;
+}
+
+h1{
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+p{
+    margin-top: 4px;
+    color: #e4e1e1;
+}
+
+.row--3{
+    background-color: transparent;
+    border-radius :0 0 10px 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+    color: #fff;
+    opacity: 0;
+}
+
+.heart{
+    display: flex;
+    column-gap: 5px;
+}
+
+.heart img{
+    height: 30px;
+}
+
+.heart span{
+    font-size: 25px;
+}
+.comments{
+    display: flex;
+    column-gap: 5px;
+}
+
+.comments img{
+    height: 30px;
+}
+
+.comments span{
+    font-size: 25px;
 }
