@@ -1,63 +1,50 @@
-body{
-    margin: 0;
-    padding: 0;
-}
-
-
 .container{
-    display: flex;
     height: 100vh;
+    width: 100vw;
+    position: absolute;
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
 }
 
-.squre{
-    height: 20px;
-    width: 20px;
-    background: #000;
-    animation: rotate 3.5s infinite;
-    transform: rotate(45deg);
-    animation: rotate 1.5s infinite;
+.pitch{
+    border-radius: 50%;
 }
-
-@keyframes rotate{
-    /* 0%{
-        transform: rotate(45deg);
-    }
+.pitch-1{
+    height: 250px;
+    width: 250px;
+    background-color: black;
+    position: absolute;
     
-    40%{
-        transform: rotate(145deg);
-    }
+    
+}
 
-    60%{
-        transform: rotate(245deg);
-    }
-
-    100%{
-        transform: rotate(360deg);
-    } */
-
-
-    from{
-        transform: rotate(-45deg);
-    }
-
-    to{
-        transform: rotate(45deg);
-    }
-
+.pitch-2{
+    height: 180px;
+    width: 180px;
+    background-color: rgb(34, 181, 250);
+    position: absolute;
+   
+    display: flex;
+    justify-self: center;
+    align-self: center;
 }
 
 
-.squre-1{
-    background-color: #10c3b1;
+.pitch-3{
+    height: 120px;
+    width: 120px;
+    background-color: rgb(230, 35, 21);
+    position: absolute;
+    position: absolute;
+    
 }
 
-.squre-2{
-    background-color: #9610c3;
+.pitch-4{
+    height: 60px;
+    width: 60px;
+    background-color: rgb(255, 255, 53);
+    position: absolute;
+    
 }
 
-.squre-3{
-    background-color: #c35e10;
-}
