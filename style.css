@@ -3,58 +3,49 @@ body{
     padding: 0;
 }
 
-/* .container{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-} */
 
 .container{
     display: flex;
     height: 100vh;
     justify-content: center;
     align-items: center;
+    gap: 15px;
 }
 
-/* .circle{
-    padding: 13px;
-    border-radius: 50%;
-    background-color: gray;
-    animation: loading 1.5s infinite;
-} */
-
-.circle{
-    height: 1.5em;
-    width: 1.5em;
+.squre{
+    height: 20px;
+    width: 20px;
     background: #000;
-    margin: .5em;
-    border-radius: 50%;
-    animation: pulse infinite alternate 1s;
+    animation: rotate 3.5s infinite;
 }
 
-@keyframes pulse{
-    from{
-        background-color: darkgray;
-    }
-
-    to{
-        background: lightgray;
-        height: 1.6em;
-        width: 1.6em;
-    }
-}
-/* @keyframes loading{
+@keyframes rotate{
     0%{
-        transform: scale(1);
+        transform: rotate(45deg);
     }
-    50%{
-        transform: scale(1.05);
-        background-color: rgb(224, 222, 222);
+    
+    40%{
+        transform: rotate(145deg);
     }
+
+    60%{
+        transform: rotate(245deg);
+    }
+
     100%{
-        transform: scale(1);
+        transform: rotate(360deg);
     }
-} */
+}
+
+
+.squre-1{
+    background-color: #10c3b1;
+}
+
+.squre-2{
+    background-color: #9610c3;
+}
+
+.squre-3{
+    background-color: #c35e10;
+}
