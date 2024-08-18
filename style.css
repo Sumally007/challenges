@@ -1,4 +1,46 @@
-.container{
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.rings, .ring{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ring{
+    border-radius: 50%;
+}
+
+
+.ring-1{
+    height: 200px;
+    width: 200px;
+    background-color: #000;
+}
+
+
+.ring-2{
+    height: 150px;
+    width: 150px;
+    background-color: #ff2e2e;
+}
+
+.ring-3{
+    height: 100px;
+    width: 100px;
+    background-color: #00c8ff;}
+
+.ring-4{
+    height: 50px;
+    width: 50px;
+    background-color: #f0ff1b;}
+
+
+
+/* .container{
     height: 100vh;
     width: 100vw;
     position: absolute;
@@ -8,6 +50,7 @@
 }
 
 .pitch{
+
     border-radius: 50%;
 }
 .pitch-1{
@@ -47,4 +90,4 @@
     position: absolute;
     
 }
-
+ */
