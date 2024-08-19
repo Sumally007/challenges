@@ -3,26 +3,30 @@ body{
 }
 
 .container{
-    height: 200px;
-    width: calc(200px*3/2);
-    display: grid;
-    grid-template-columns: repeat(2, 100px 200px);
-    grid-template-rows: repeat(2, 1fr);
-    margin: 40px auto;
+    height: 150px;
+    width: calc(150px * 1.5);
+    display: flex;
+    /* grid-template-columns: repeat(2, 100px 200px);
+    grid-template-rows: repeat(2, 1fr); */
+    margin: 2em auto;
+    background-color: white;
 }
 
 .bar1{
     background-color: #fff;
-    grid-row: 1 / span 2;
+    height: 150px;
+    width: calc(150px / 2);
 }
 
 .bar2{
     background-color: #ee0e0e;
-    grid-column: 2 / 2;
-    grid-row: 1 / 2;
+    height: calc(150px / 2);
+    width: 150px;
+
 }
 
 .bar3{
     background-color: #126520;
-    grid-column: 2 / 3;
+    height: calc(150px / 2);
+    width: 150px;
 }
