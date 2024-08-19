@@ -1,4 +1,74 @@
-body{
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+
+h1::after{
+    content: "";
+    animation: swap 6s infinite;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 4px;
+    color: #fff;
+    font-family: sans-serif;
+    margin-left: 4px;
+}
+
+@keyframes swap{
+    0%{
+        content: "Cats";
+    }
+    25%{
+        content: "Coding";
+    }
+
+    45%{
+        content: "Football";
+    }
+
+    75%{
+        content: "Study";
+    }
+
+    100%{
+        content: "Cats";
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body{
     height: 100vh;
     display: flex;
     align-items: center;
@@ -55,6 +125,7 @@ span{
     }
 
     100%{
-        /* transform: translateY(-25px); */
+        transform: translateY(-25px);
     }
-}
+} 
+*/
