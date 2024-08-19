@@ -1,12 +1,17 @@
 .container{
     height: 150px;
     width: calc(150px*5/3);
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    display: flex;
+    flex-direction: column;
+    /* display: grid; */
+    /* grid-template-rows: repeat(3, 1fr); */
     background-color: aliceblue;
-    margin: 2em auto;
+    margin: 30px auto;
 }
 
+.bar{
+    flex-grow: 1;
+}
 .bar1{
     background-color: black;
 }
@@ -18,3 +23,4 @@
 .bar3{
     background-color: yellow;
 }
+  
