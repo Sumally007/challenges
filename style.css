@@ -1,40 +1,77 @@
-.container{
-    height: 200px;
-    width: calc(200px * 7/6);
+body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
     background-color: black;
-    margin: 40px auto;
+}
+
+.container{
+    padding: 20px;
+    height: 400px;
+    width: 250px;
+    background-color: rgba(24, 23, 23, 0.978);
+    border-radius: 10px;
+    margin: 30px auto;
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 70% repeat(3, 1fr);
 }
 
 .div1{
-    background-color: red;
+    display: flex;
+    justify-content: center;
 }
 
+.circle{
+    height: 250px;
+    width: 250px;
+    background-color: black;
+    border-radius: 50%;
+    background-image: url(./img/nat-9.jpg);
+    background-size: cover;
+}
 .div2{
-    background-color: #fff;
-    position: relative;
+
+}
+
+h1{
+    margin: 0;
+    margin-top: -21px;
+    font-family: sans-serif;
+    color: #e2dede;
+    font-size: 26px;
+}
+p, .paragraph{
+    margin-top: 0px;
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 100;
+    opacity: 0.2;
+}
+.paragraph{
+    margin-top: 0;
+    opacity: 0.35;
+}
+.div4{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-
-.cirle{
-    background-color: red;
-    height: calc(200px / 3 * .85);
-    width: calc(200px / 3 * .85);
-    border-radius: 50%;
-    position: absolute;
+button{
+    width: 100%;
+    padding: 2px;
+    outline: none;
+    border: none;
+    opacity: 0.35;
+    font-family: sans-serif;
+    color: #fff;
+    background-color: rgb(74, 70, 70);
 }
 
-/* .cirle{
-    height: 60px;
-    width: 60px;
-    background-color: red;
-    border-radius: 50%;
-} */
-
-.div3{
-    background-color: #248523;
+button:hover{
+    border: 1px solid #dadada;
+    border-radius: 5px;
 }
