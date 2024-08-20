@@ -1,5 +1,46 @@
 .container{
     height: 200px;
+    width: calc(200px*8/5);
+    background-color: blue;
+    display: flex;
+    margin: 2em auto;
+    position: relative;
+}
+
+.divi{
+    background-color: yellow;
+    height: calc(200px*1/5);
+}
+
+.div1{
+    align-self: center;
+    width: 100%;
+}
+
+.div2{
+    width: 200px;
+    position: absolute;
+    transform: rotate(90deg);
+    top: calc(200px*4/10);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .container{
+    height: 200px;
     width: calc(200px * 8/5);
     background-color: blue;
     margin: 30px auto;
@@ -19,4 +60,4 @@
     background-color: yellow;
     position: absolute;
     transform: rotate(90deg);
-}
+} */
