@@ -13,17 +13,27 @@
 
 .div2{
     background-color: #fff;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+
 .cirle{
+    background-color: red;
+    height: calc(200px / 3 * .85);
+    width: calc(200px / 3 * .85);
+    border-radius: 50%;
+    position: absolute;
+}
+
+/* .cirle{
     height: 60px;
     width: 60px;
     background-color: red;
     border-radius: 50%;
-}
+} */
 
 .div3{
     background-color: #248523;
