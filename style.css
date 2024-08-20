@@ -1,4 +1,58 @@
-body{
+.container{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.divi{
+    height: calc(200px*3/16);
+    width: calc(200px*5/8);
+    background-color: #fff;
+}
+
+.div2{
+    transform: rotate(90deg);    
+    position: absolute;
+}
+/* .div1{
+    height: calc(200px*3/16);
+    width: calc(200px*5/8);
+    background-color: #fff;
+}
+
+
+.div2{
+    width: calc(200px*3/16);
+    height: calc(200px*5/8);
+    background-color: #fff;
+    position: absolute;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body{
     height: 100vh;
 }
 
@@ -62,4 +116,4 @@ body{
 
 .div10{
     background-color: rgb(255, 14, 14);
-}
+} */
