@@ -22,6 +22,7 @@ body{
     grid-template-rows: 55px 1fr 55px;
     font-size: 30px;
     font-weight: 700;
+    color: red;
 }
 
 .top{
@@ -37,10 +38,11 @@ body{
 }
 
 .middle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 100px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 80px;
+    justify-items: center;
 }
 
 .bottom{
@@ -54,4 +56,13 @@ body{
 .bottom .ace{
     display: inline-block;
     margin-left: 3px;
+}
+
+.middle .top1, .top2{
+    margin-top: -35px;
+}
+
+.middle .bottom-1, .bottom-2{
+    transform: rotate(180deg);
+    margin-bottom: -30px;
 }
