@@ -1,4 +1,60 @@
-html, body{
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.card{
+    height: 200px;
+    width: 350px;
+    background: #060ce9;
+    color: #fff;
+    padding: 2em;
+    margin: 2em;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: transform .2s;
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+.back{
+    display: none;
+
+}
+
+.card:hover .front{
+    display: none;
+}
+
+.card:hover .back{
+    display: block;
+    background: #060ce9;
+    color: #fff;
+    transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* html, body{
     margin: 0;
     padding: 0;
 }
@@ -56,4 +112,4 @@ html, body{
     border-radius: 10px;
 
     background-color: blue;
-}
+} */
