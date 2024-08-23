@@ -1,119 +1,54 @@
-html , body{
+body{
     margin: 0;
     padding: 0;
 }
 
-.container{
-    display: flex;
-    justify-content: center;
-    margin: 2em;
-}
-
-.top{
-    font-size: 2em;
-}
-
-.card{
-    border: 1px solid black;
-    height: 300px;
-    width: 200px;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: 10% 80% 10%;
-    color: red;
-    padding: .5em;
-}
-
-.middle{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    align-items: center;
-    text-align: center;
-    font-size: 5em;
-}
-
-.middle :nth-child(3),
-.middle :nth-child(4){
-    transform: scaleY(-1);
-}
-
-.right{
-    transform: rotate(180deg);
-    font-size: 2em;
-}
-
-
-
-
-
-
-
-
-/* body{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-}
 .container{
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar{
+    height: 40px;
+    width: 300px;
     background-color: aliceblue;
+    border-radius: 100px;
+    position: relative;
+    padding: 5px;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
-.card{
-    height: 300px;
-    width: calc(300px*2/3);
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 10px;
-    display: grid;
-    grid-template-rows: 55px 1fr 55px;
-    font-size: 30px;
-    font-weight: 700;
-    color: red;
+.bar::before{
+    content: "";
+    width: 0;
+    height: 80%;
+    border-radius: 100px;
+    position: absolute;
+    animation: progress 2s;
 }
 
-.top{
-    line-height: 30px;
-    display: flex;
-    flex-direction: column;
-    
-}
+@keyframes progress{
+    25%{
+        width: 25%;
+        background-color:red;
+    }
 
-.top .ace{
-    font-size: 30px;
-    margin-left: 3px;
-}
+    50%{
+        width: 50%;
+        background-color:orangered;
+    }
 
-.middle{
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    font-size: 80px;
-    justify-items: center;
-}
+    75%{
+        width: 75%;
+        background-color:greenyellow;
+    }
 
-.bottom{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    line-height: 30px;
-    transform: rotate(180deg);
+    100%{
+        width: 100%;
+        background-color:green;
+    }
 }
-
-.bottom .ace{
-    display: inline-block;
-    margin-left: 3px;
-}
-
-.middle .top1, .top2{
-    margin-top: -35px;
-}
-
-.middle .bottom-1, .bottom-2{
-    transform: rotate(180deg);
-    margin-bottom: -30px;
-} */
